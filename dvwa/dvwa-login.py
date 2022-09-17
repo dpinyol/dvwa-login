@@ -7,8 +7,8 @@ PASSWORDS = [
     "password",
     "tentativa",
     "aloha",
-    "ihuuuu"
-    "qwerty"
+    "ihuuuu",
+    "qwerty",
     "qw12er34ty56"
 ]
 
