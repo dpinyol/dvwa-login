@@ -45,7 +45,7 @@ def read_passwords_from_file(filename):
         return [line.strip() for line in f]
 
 def brute_force():
-    passwords = read_passwords_from_file('diccionario.txt')
+    passwords = read_passwords_from_file('/usr/share/set/src/fasttrack/wordlist.txt')
     for password in passwords:
         set_request_tokens()
         data['password'] = password
